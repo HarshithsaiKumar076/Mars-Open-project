@@ -1,0 +1,21 @@
+{
+  "name": "dbft-signaling-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Lightweight WebRTC signaling server for Direct Browser-to-Browser File Transfer. Coordinates the connection handshake only — it never reads, processes, or stores file data.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "nanoid": "^5.0.7",
+    "socket.io": "^4.7.5"
+  }
+}
